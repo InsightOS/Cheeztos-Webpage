@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+
+*,
+::before, 
+::after {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+h1, 
+h2, 
+h3 {
+    font-weight: 700;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(#ffdc73, #ffcf40, #ffbf00, #e9b721);
+}
+.box {
+    width: calc(100% - 50px);
+    max-width: 877px;
+    display: grid;
+    place-items: center;
+    padding: 190px;
+    background: orange;
+    color: #000;
+    border-radius: 20px;
+    animation: box-rotate 15s ease-in-out infinite;
+    user-select: none;
+    opacity: 0.7;
+    
+}
+  @keyframes box-rotate {
+    0% {
+      transform: rotate(0);
+      opacity: 0.7;
+    }
+    50% {
+      transform: rotate(-360deg);
+      opacity: 1;
+    }
+}
+
+.box h2 {
+    font-size: 72px;
+}
+
+.button {
+    background-color: beige;
+}
+
+.main{
+    font-family: Notable, sans-serif;
+    text-align: center;
+    padding: 90px;
+}
+
+#navbar{
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background-color:#ffbf00;
+    padding-left: 100%;
+}a{
+    white-space: nowrap;
+    display: block;
+    text-align: right;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Roboto, "sans-serif";
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    color: black;
+    margin: 5px;
+    user-select: none;
+    position:  sticky;
+}
+#navbar a:hover{
+    background-color: black;
+    transition: 0.2s ease-in-out;
+    color: #ffbf00;
+    transform: translate(1px, 3.5px);
+}
+.logo{
+    margin: 40px;
+    user-select: none;
+    margin-left: 18px;
+    margin-top: 90px;
+    animation: loadlogo 1s ease-in-out;
+}
+.BigText{
+    font-family: Mulish, "sans-serif";
+    text-align: center;
+    user-select: none;
+    font-size: 40px;
+    font-weight: bold;
+    animation: text-up-down 1s ease-in-out infinite;
+    box-sizing: border-box;
+    white-space: nowrap;
+    margin-left: -820px;
+    margin-top: -140px;
+    animation: loadtext 0.5s ease-in-out;
+}
+.box-info{
+    box-sizing: border-box;
+    width: 500px;
+    height: 450px;
+    background-color: rgb(37, 34, 34);
+    margin-top: 70px;
+    margin-left: 30px;
+    opacity: 100%;
+    border-radius: 10%;
+    animation: loadinfo 1s ease-in-out;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 700;
+    padding: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+.big-box-info{
+    box-sizing: border-box;
+    width: 930px;
+    height: 615px;
+    background-color: rgb(37, 34, 34);
+    margin-top: -615px;
+    margin-left: 570px;
+    opacity: 100%;
+    border-radius: 40px;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 700;
+    padding: 30px;
+    color: #fff;
+    animation: loadlargebox 1.5s ease-in-out;
+}
+td{
+    padding: 25px;
+}
+caption{
+    text-align: center;
+}
+.languageshover:hover{
+    height: 175px;
+    width: 175px;
+    transition: 0.1s ease-in-out;
+}
+.languageshoverexception:hover{
+    width: 175px;
+    height: 220px;
+    transition: 0.1s ease-in-out;
+}
+.hoverforhtml:hover{
+    width: 192px;
+    height: 215px;
+    transition: 0.1s ease-in-out;
+}
+.hoverforcss{
+    padding-top: 18px;
+}
+.hoverforcss:hover{
+    width: 185px;
+    height: 234px;
+    transition: 0.1s ease-in-out;
+}
+.unityforhtml:hover{
+    width: 170px;
+    height: 170px;
+    transition: 0.1s ease-in-out;
+}
+.pluslogo{
+    height: 210px;
+    width: 210px;
+    padding: 10px;
+    margin-left: -30px;
+}
+.pluslogo:hover{
+    height: 220px;
+    width: 220px;
+    transition: 0.1s ease-in-out;
+}
+caption{
+    font-size: 30px;
+    font-family: Roboto;
+}
+
+
+/*
+.textinsidebox{
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 700;
+    padding: 30px;
+    color: black;
+    opacity: 100%;
+}
+*/
+@keyframes loadtext{
+    0%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes loadlogo{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes loadinfo{
+    0%{
+        transform: translateX(-800px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+
+    }
+}
+@keyframes loadlargebox{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%
+    }
+}
+
+
+/*
+.content{
+    padding: 16px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}*/
+/* can i remove the content and sticky thing? */
+/* honestly idk why this exists, can I remove this nonsense?
+
